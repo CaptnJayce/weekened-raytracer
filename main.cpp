@@ -9,7 +9,7 @@ int main() {
   for (int j = 0; j < image_height; j++) {
     for (int i = 0; i < image_width; i++) {
       auto r = double(i) / (image_width - 1);
-      auto g = double(i) / (image_height - 1);
+      auto g = double(j) / (image_height - 1);
       auto b = 0.0;
 
       int ir = int(255.999 * r);
